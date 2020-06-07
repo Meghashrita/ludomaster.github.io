@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url(image/468.jpg) ;
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container h1 {
+    margin: 15px;
+    text-align: center;
+    text-shadow: 5px 0 white;
+    font-size: 6rem;
+    color: red;
+}
+
+.grid-container {
+    margin: auto;
+    width: 560px;
+    height: 560px;
+    display: grid;
+    grid-template-rows: 9;
+    grid-template-columns: 9;
+    padding: 5px;
+  }
+  
+  .board-square {
+      grid-row-end: span 1;
+      grid-column-end: span 1;
+      height: 100%;
+      border-radius: 20px;
+      background-color: rgb(127, 170, 40);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  
+  #sq-1, #sq-2, #sq-3, #sq-4, #sq-5, #sq-6, #sq-7, #sq-8 {
+      grid-row-start: 1;
+      border-right: 1px solid black;
+  }
+
+  #sq-15, #sq-16, #sq-17, #sq-18, #sq-19, #sq-20, #sq-21, #sq-22 {
+    grid-row-start: 8;
+    border-left: 1px solid black;
+  }
+
+  #sq-1, #sq-28, #sq-27, #sq-26, #sq-25, #sq-24, #sq-23, #sq-22 {
+    grid-column-start: 1;
+    border-bottom: 1px solid black;
+  }
+
+  #sq-8, #sq-9, #sq-10, #sq-11, #sq-12, #sq-13, #sq-14, #sq-15 {
+    grid-column-start: 8;
+    border-top: 1px solid black;
+  }
+
+  #sq-28, #sq-9 {
+      grid-row-start: 2;
+  }
+
+  #sq-27, #sq-10 {
+    grid-row-start: 3;
+  }
+
+  #sq-26, #sq-11 {
+    grid-row-start: 4;
+  }
+
+  #sq-25, #sq-12 {
+    grid-row-start: 5;
+  }
+
+  #sq-24, #sq-13 {
+    grid-row-start: 6;
+  }
+
+  #sq-23, #sq-14 {
+    grid-row-start: 7;
+  }
+
+  #sq-21, #sq-2 {
+    grid-column-start: 2;
+  }
+
+  #sq-20, #sq-3 {
+    grid-column-start: 3;
+  }
+
+  #sq-19, #sq-4 {
+    grid-column-start: 4;
+  }
+
+  #sq-18, #sq-5 {
+    grid-column-start: 5;
+  }
+
+  #sq-17, #sq-6 {
+    grid-column-start: 6;
+  }
+
+  #sq-16, #sq-7 {
+    grid-column-start: 7;
+  }
+
+  #sq-22 {
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  #sq-8 {
+    border-right: 0;
+    border-top: 0;
+  }
+
+  #sq-1 {
+      background-color: #fd6e53;
+      border: 0;
+  }
+
+  #sq-28 {
+    background-color: #ffac9c;
+    border: 0;
+  }
+
+  #sq-15 {
+    background-color:#ad6dff;
+    border: 0;
+  }
+
+  #sq-14 {
+    background-color:#d1b0fc;
+    border: 0;
+  }
+
+
+ .gif {
+     width: 150px;
+     height: 150px;
+     position: absolute;
+     top: 100px;
+     right: 200px;
+     background-image: url(image/dice.gif);
+     float:right;
+     background-size: contain;
+ }
+
+.gif h2 {
+  position: relative;
+  top: 155px;
+  font-size: 2rem;
+  font-family: cursive;
+  color: red;
+}
+
+ .pawns {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    position: absolute;
+ }
+
+#uselesstext2 {
+     font-size: 2rem;
+     position: absolute;
+     top: 350px;
+     left: 780px;
+     padding-left: 10px;
+     padding-right: 20px;
+ }
+
+ #uselesstext1 {
+  font-size: 2rem;
+  position: absolute;
+  top: 350px;
+  left: 660px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+ #player {
+   font-size: 2rem;
+   position: absolute;
+   top: 350px;
+   left: 730px;
+ } 
+
+ #badtext {
+   font-size: 2rem;
+   font-family: cursive;
+   color: brown;
+   position: absolute;
+   top: 370px;
+   left: 590px;
+ }
+
+ #redpawn1 h2 {
+   position: absolute;
+   top: 30px;
+   left: 10px;
+   font-size: 2rem;
+   font-family: cursive;
+   color:red;
+ }
+
+ #redpawn2 h2 {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  font-size: 2rem;
+  font-family: cursive;
+  color:red;
+}
+
+#bluepawn1 h2 {
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+  font-size: 2rem;
+  font-family: cursive;
+  color:blue;
+}
+
+#bluepawn2 h2 {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-size: 2rem;
+  font-family: cursive;
+  color:blue;
+}

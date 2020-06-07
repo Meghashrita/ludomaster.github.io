@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/Ds_22831.ico">
+    <title>Ludo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Ludo-game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LUDO</h1>
+       <div class="grid-container">
+        <div id="sq-1" class="board-square"></div>
+        <div id="sq-2" class="board-square"></div>
+        <div id="sq-3" class="board-square"></div>  
+        <div id="sq-4" class="board-square"></div>
+        <div id="sq-5" class="board-square"></div>
+        <div id="sq-6" class="board-square"></div>
+        <div id="sq-7" class="board-square"></div>
+        <div id="sq-8" class="board-square"></div>  
+        <div id="sq-9" class="board-square"></div>
+        <div id="sq-10" class="board-square"></div>
+        <div id="sq-11" class="board-square"></div>
+        <div id="sq-12" class="board-square"></div>
+        <div id="sq-13" class="board-square"></div>
+        <div id="sq-14" class="board-square"></div>
+        <div id="sq-15" class="board-square"></div>
+        <div id="sq-16" class="board-square"></div>
+        <div id="sq-17" class="board-square"></div>
+        <div id="sq-18" class="board-square"></div>
+        <div id="sq-19" class="board-square"></div>
+        <div id="sq-20" class="board-square"></div>
+        <div id="sq-21" class="board-square"></div>
+        <div id="sq-22" class="board-square"></div>
+        <div id="sq-23" class="board-square"></div>
+        <div id="sq-24" class="board-square"></div>
+        <div id="sq-25" class="board-square"></div>
+        <div id="sq-26" class="board-square"></div>
+        <div id="sq-27" class="board-square"></div>
+        <div id="sq-28" class="board-square"></div>
+      </div>
+       <!--<button type="button" onclick="stepLeft()">Left</button>
+    <button type="button" onclick="stepRight()">Right</button>
+    <button type="button" onclick="stepUp()">Top</button>
+    <button type="button" onclick="stepDown()">Bottom</button>-->
+
+    <!--    <button type="button"  id="red">Red</button>
+    <button type="button" id="blue">Blue</button>-->
+      <div class="gif" id="dice" onclick="randomNum()">
+          <h2>CLICK ON THE DICE</h2>
+      </div>
+      <div class="pawns" id="redpawn1" style="background-color: red; top: 155px; left: 410px;" onclick="randomMove('red',1)">
+         <h2>R1</h2>
+    </div>
+      <div class="pawns" id="redpawn2" style="background-color: red; top: 155px; left: 340px;" onclick="randomMove('red',2)">
+        <h2>R2</h2>
+    </div>
+      <div class="pawns" id="bluepawn1" style="background-color:blue; top: 646px; left: 1070px;" onclick="randomMove('blue',1)">
+        <h2>B1</h2>
+    </div>
+      <div class="pawns" id="bluepawn2" style="background-color:blue; top: 646px; left: 1140px;" onclick="randomMove('blue',2)">
+        <h2>B2</h2>
+    </div>
+      <h2 id="uselesstext2">'s turn</h2>
+      <h2 id="player" style=" color:red">red</h2>
+      <h2 id="uselesstext1">It's</h2>
+
+      <p id="badtext"></p> 
+    </div>
+    
+</body>
+</html>
