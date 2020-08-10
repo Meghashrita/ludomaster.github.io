@@ -31,7 +31,7 @@ function Stuck() {
             badtext.innerText = "Unfortunatlly you stuck";
             clicked = false;
             var dice = document.getElementById('dice');
-            dice.style.backgroundImage = "url(Image/dice.gif)";
+            dice.style.backgroundImage = "url(image/dice.gif)";
             window.setTimeout(changePlayer, 1000);
         }
     }
@@ -47,7 +47,7 @@ function changePlayer() {
     var badtext = document.getElementById('badtext');
     badtext.innerText = "";
     var dice = document.getElementById('dice');
-    dice.style.backgroundImage = "url(Image/dice.gif)";
+    dice.style.backgroundImage = "url(image/dice.gif)";
 }
 var positions = {
     redpawn1: 0, redpawn2: 0, 
@@ -133,7 +133,7 @@ function randomNum() {
     if (!clicked) {
         num = Math.floor((Math.random() * 6) + 1);;
         var dice = document.getElementById('dice');
-        dice.style.backgroundImage = "url(Image/" + num + ".jpg)";
+        dice.style.backgroundImage = "url(image/" + num + ".jpg)";
         clicked = true;
     }
     if (num != 6&&DontHaveOtherFree()) {
@@ -200,7 +200,7 @@ function randomMove(Color, paw) {
                     num = 0;
                     clicked = false;
                     var dice = document.getElementById('dice');
-                    dice.style.backgroundImage = "url(Image/dice.gif)";
+                    dice.style.backgroundImage = "url(image/dice.gif)";
                 }
                 else Stuck();
             }
